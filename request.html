@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Request a Service — Eswaku Enterprise Limited</title>
+<meta name="description" content="Request cleaning, transport, manpower, moving, fumigation, landscaping, event or repair services from Eswaku Enterprise Limited." />
+<link rel="icon" href="assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="Eswaku Enterprise Limited logo" />
+      <span class="brand-name">Eswaku Enterprise<small>We make it easy for you.</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="request.html">Request a Service</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <span class="nav-phone">📞 +254 727 661 672</span>
+      <a href="request.html" class="btn btn-ghost">Request a service</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:50px;">
+  <div class="wrap">
+    <p class="eyebrow">Request form</p>
+    <h1 style="max-width:20ch;">Tell us the job. <em>We'll call to sort the rest.</em></h1>
+    <p class="hero-sub">Fill in the form below. It goes straight to our team, and we'll call you to confirm details and price.</p>
+  </div>
+</section>
+<div class="stripe"></div>
+
+<section>
+  <div class="wrap form-shell">
+
+    <form id="service-request-form" class="form-card" novalidate>
+      <div class="form-row two">
+        <div>
+          <label for="name">Full name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="e.g. Jane Wanjiru" />
+        </div>
+        <div>
+          <label for="phone">Phone number <span class="required">*</span></label>
+          <input type="tel" id="phone" name="phone" required placeholder="07XX XXX XXX" />
+        </div>
+      </div>
+
+      <div class="form-row two">
+        <div>
+          <label for="service">Service needed <span class="required">*</span></label>
+          <select id="service" name="service" required>
+            <option value="" selected disabled>Choose a service</option>
+            <option value="Cleaning Services">Cleaning Services</option>
+            <option value="Transport & Logistics">Transport &amp; Logistics</option>
+            <option value="Manpower & Labour Supply">Manpower &amp; Labour Supply</option>
+            <option value="Moving & Relocation">Moving &amp; Relocation</option>
+            <option value="Fumigation & Pest Control">Fumigation &amp; Pest Control</option>
+            <option value="Gardening & Landscaping">Gardening &amp; Landscaping</option>
+            <option value="Event Setup & Rentals">Event Setup &amp; Rentals</option>
+            <option value="General Repairs & Maintenance">General Repairs &amp; Maintenance</option>
+            <option value="Other">Other (describe below)</option>
+          </select>
+        </div>
+        <div>
+          <label for="preferredDate">Preferred date</label>
+          <input type="date" id="preferredDate" name="preferredDate" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email (optional)</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" />
+      </div>
+
+      <div class="form-row">
+        <label for="location">Location / address <span class="required">*</span></label>
+        <input type="text" id="location" name="location" required placeholder="e.g. Kilimani, Nairobi" />
+      </div>
+
+      <div class="form-row">
+        <label for="details">Job details</label>
+        <textarea id="details" name="details" placeholder="Tell us more — size of space, number of people needed, load size, event date, or anything else that helps us plan."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Send request</button>
+      <p class="form-note">By submitting, you agree to be contacted by phone or email about this request.</p>
+
+      <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+    </form>
+
+    <aside class="side-info">
+      <h3>Prefer to talk it through?</h3>
+      <ul class="side-list">
+        <li><strong>Call / WhatsApp</strong> <a href="tel:+254727661672">+254 727 661 672</a></li>
+        <li><strong>Location</strong> <span>Nairobi, Kenya</span></li>
+        <li><strong>Hours</strong> <span>Mon – Sat, 7:00 AM – 6:00 PM</span></li>
+      </ul>
+
+      <h3>What happens next</h3>
+      <ul class="side-list">
+        <li><strong>Step 1</strong> <span>Your request lands in our system instantly.</span></li>
+        <li><strong>Step 2</strong> <span>Our team reviews and calls you to confirm.</span></li>
+        <li><strong>Step 3</strong> <span>We schedule and complete the job.</span></li>
+      </ul>
+    </aside>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Eswaku Enterprise Limited" />
+          <span>Eswaku Enterprise</span>
+        </div>
+        <p>We make it easy for you — cleaning, transport, manpower and more, across Nairobi.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="request.html">Request a Service</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+254727661672">+254 727 661 672</a></li>
+          <li><span>Nairobi, Kenya</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Eswaku Enterprise Limited. All rights reserved.</span>
+      <span>We make it easy for you.</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
